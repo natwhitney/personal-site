@@ -1,0 +1,1 @@
+import{_ as t,c,a as o,o as r}from"./index-DM4LAvdp.js";const s={};function a(n,e){return r(),c("main",null,e[0]||(e[0]=[o("p",null,"This projects page is not built yet check back later!",-1)]))}const i=t(s,[["render",a]]);export{i as default};
