@@ -1,7 +1,9 @@
+<script setup lang="ts"></script>
+
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+  <main>
+    <p>This About page is not built yet check back later!</p>
+  </main>
 </template>
 
 <style>
