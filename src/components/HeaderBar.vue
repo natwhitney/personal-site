@@ -1,40 +1,37 @@
 <script setup lang="ts">
-import { VDivider, VBtn, VRow, VCol } from 'vuetify/components'
+import { VDivider, VBtn, VRow, VCol, VAppBar, VContainer } from 'vuetify/components'
 </script>
 
 <template>
-  <div class="app-header">
-    <v-container fluid class="d-flex justify-space-between align-center py-4">
-      <h1>nwhitney.dev</h1>
-      <h3>Self Hosting is Cool!</h3>
-    </v-container>
-    <v-divider></v-divider>
-    <v-container fluid class="py-2">
+  <v-app-bar density="prominent" style="min-height: 130px">
+    <v-container>
+      <v-row justify="space-between">
+        <v-col><h1>nwhitney.dev</h1></v-col>
+        <v-col style="text-align: right" align-self="end"><h3>Self Hosting is Cool!</h3></v-col>
+      </v-row>
       <v-row>
-        <v-col cols="auto">
-          <v-btn variant="text" to="/about">About</v-btn>
-        </v-col>
-        <v-col cols="auto">
-          <v-btn variant="text" to="/blog">Blog</v-btn>
-        </v-col>
-        <v-col cols="auto">
-          <v-btn variant="text" to="/projects">Projects</v-btn>
-        </v-col>
-        <v-col cols="auto">
-          <v-btn variant="text" to="/useful-sites">Useful Sites</v-btn>
-        </v-col>
+        <v-divider></v-divider>
+      </v-row>
+      <v-row>
+        <v-container fluid style="padding: 7px">
+          <v-row>
+            <v-col cols="auto">
+              <v-btn variant="text" to="/about">About</v-btn>
+            </v-col>
+            <v-col cols="auto">
+              <v-btn variant="text" to="/blog">Blog</v-btn>
+            </v-col>
+            <v-col cols="auto">
+              <v-btn variant="text" to="/projects">Projects</v-btn>
+            </v-col>
+            <v-col cols="auto">
+              <v-btn variant="text" to="/useful-sites">Useful Sites</v-btn>
+            </v-col>
+          </v-row>
+        </v-container>
       </v-row>
     </v-container>
-  </div>
+  </v-app-bar>
 </template>
 
-<style scoped>
-.app-header {
-  position: sticky;
-  top: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  z-index: 1000;
-}
-</style>
+<style scoped></style>
