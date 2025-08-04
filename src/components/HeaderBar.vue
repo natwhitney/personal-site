@@ -16,16 +16,16 @@ import { VDivider, VBtn, VRow, VCol, VAppBar, VContainer } from 'vuetify/compone
         <v-container fluid style="padding: 7px">
           <v-row>
             <v-col cols="auto">
-              <v-btn variant="text" to="/about">About</v-btn>
+              <v-btn slim variant="text" to="/about">About</v-btn>
             </v-col>
             <v-col cols="auto">
-              <v-btn variant="text" to="/blog">Blog</v-btn>
+              <v-btn slim variant="text" to="/blog">Blog</v-btn>
             </v-col>
             <v-col cols="auto">
-              <v-btn variant="text" to="/projects">Projects</v-btn>
+              <v-btn slim variant="text" to="/projects">Projects</v-btn>
             </v-col>
             <v-col cols="auto">
-              <v-btn variant="text" to="/useful-sites">Useful Sites</v-btn>
+              <v-btn slim variant="text" to="/useful-sites">Useful Sites</v-btn>
             </v-col>
           </v-row>
         </v-container>

@@ -2,6 +2,7 @@
 import { RouterView } from 'vue-router'
 import { VThemeProvider, VApp, VMain } from 'vuetify/components'
 import HeaderBar from './components/HeaderBar.vue'
+import PageContainer from './components/PageContainer.vue'
 </script>
 
 <template>
@@ -9,7 +10,9 @@ import HeaderBar from './components/HeaderBar.vue'
     <v-app>
       <HeaderBar />
       <v-main>
-        <router-view />
+        <PageContainer>
+          <router-view />
+        </PageContainer>
       </v-main>
     </v-app>
   </VThemeProvider>
