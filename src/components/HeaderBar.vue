@@ -13,8 +13,8 @@ import { VDivider, VBtn, VRow, VCol, VAppBar, VContainer } from 'vuetify/compone
         <v-divider></v-divider>
       </v-row>
       <v-row>
-        <v-container fluid style="padding: 7px">
-          <v-row>
+        <v-container style="padding: 7px">
+          <v-row justify="center">
             <v-col cols="auto">
               <v-btn slim variant="text" to="/about">About</v-btn>
             </v-col>
