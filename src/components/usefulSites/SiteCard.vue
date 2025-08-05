@@ -1,0 +1,21 @@
+<script setup lang="ts">
+import { defineProps } from 'vue'
+
+const props = defineProps({
+  site: String,
+  text: String,
+})
+
+const siteLink = 'https://' + props.site
+</script>
+
+<template>
+  <v-card :href="siteLink" variant="tonal" style="margin: 20px">
+    <v-card-title>
+      {{ site }}
+    </v-card-title>
+    <v-card-text>
+      {{ text }}
+    </v-card-text>
+  </v-card>
+</template>
