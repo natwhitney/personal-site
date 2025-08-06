@@ -4,6 +4,7 @@ import { defineProps } from 'vue'
 const props = defineProps({
   site: String,
   text: String,
+  imageLink: String,
 })
 
 const siteLink = 'https://' + props.site
@@ -14,6 +15,7 @@ const siteLink = 'https://' + props.site
     <v-card-title>
       {{ site }}
     </v-card-title>
+    <v-img v-if="imageLink" :src="imageLink"></v-img>
     <v-card-text>
       {{ text }}
     </v-card-text>

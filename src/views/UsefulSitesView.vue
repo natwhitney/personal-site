@@ -9,6 +9,6 @@ store.getSites()
 
 <template>
   <div v-for="site in store.sites" :key="site.site">
-    <site-card :site="site.site" :text="site.description"></site-card>
+    <site-card :site="site.site" :text="site.description" :image-link="site.image"></site-card>
   </div>
 </template>
