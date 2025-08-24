@@ -9,7 +9,13 @@ const siteLink = 'https://' + props.site
 </script>
 
 <template>
-  <v-card :href="siteLink" variant="tonal" style="margin: 20px">
+  <v-card
+    :href="siteLink"
+    target="_blank"
+    rel="noopener noreferrer"
+    variant="tonal"
+    style="margin: 20px"
+  >
     <v-card-title>
       {{ site }}
     </v-card-title>
