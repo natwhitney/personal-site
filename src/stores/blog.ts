@@ -6,6 +6,10 @@ export type blogPostsObject = { title: string; date: Date; image?: string; previ
 export const useBlogStore = defineStore('blogs', () => {
   const blogPosts = ref([] as blogPostsObject[])
 
+  const currentBlogPost = ref({} as { title: string; date: Date })
+
+  const validBlogPost = ref(false)
+
   function getBlogPosts() {
     blogPosts.value = [
       { title: 'badass blog post', date: new Date(), previewText: 'even more badass' },
@@ -17,5 +21,12 @@ export const useBlogStore = defineStore('blogs', () => {
     ]
   }
 
-  return { blogPosts, getBlogPosts }
+  // Have this hit api at some point
+  async function fetchCurrentBlogPost(postTitle: string, postDate: Date) {
+    currentBlogPost.value.title = postTitle.replaceAll('-', ' ')
+    currentBlogPost.value.date = postDate
+    validBlogPost.value = true
+  }
+
+  return { blogPosts, getBlogPosts, currentBlogPost, fetchCurrentBlogPost, validBlogPost }
 })

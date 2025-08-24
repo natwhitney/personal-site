@@ -22,14 +22,21 @@ const router = createRouter({
       component: () => import('../views/BlogView.vue'),
     },
     {
-      path: '/blog/:postId',
+      path: '/blog/:month/:day/:year/:title',
       name: 'blogPost',
-      component: () => import('../views/BlogView.vue'),
+      component: () => import('../views/BlogPostView.vue'),
+      props: true,
     },
     {
       path: '/projects',
       name: 'projects',
       component: () => import('../views/ProjectsView.vue'),
+    },
+    {
+      path: '/projects/:month/:day/:year/:title',
+      name: 'projectPost',
+      component: () => import('../views/ProjectPostView.vue'),
+      props: true,
     },
     {
       path: '/useful-sites',
