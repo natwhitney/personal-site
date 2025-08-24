@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as c}from"./index-CqmiQKE7.js";const o={};function n(r,a){return c(),t("p",null,"This About page is not built yet check back later!")}const _=e(o,[["render",n]]);export{_ as default};

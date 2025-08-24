@@ -1,1 +1,0 @@
-import{_ as e}from"./_plugin-vue_export-helper-DlAUqK2U.js";import{c as t,o as c}from"./index-DTBsJDip.js";const o={};function r(n,a){return c(),t("p",null,"This About page is not built yet check back later!")}const i=e(o,[["render",r]]);export{i as default};
