@@ -8,7 +8,7 @@ defineProps({
 </script>
 
 <template>
-  <v-card variant="tonal" style="margin: 20px" :link="true">
+  <v-card variant="tonal" style="margin: 20px">
     <v-card-title>
       {{ title }}
     </v-card-title>

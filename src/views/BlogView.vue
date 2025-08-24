@@ -7,14 +7,6 @@ const router = useRouter()
 
 const store = useBlogStore()
 store.getBlogPosts()
-
-// const computedKey = computed(() => {
-//   return (
-//     blogPost.date.toLocaleString(undefined, { day: 'numeric', month: 'numeric', year: 'numeric' }) +
-//     '/' +
-//     blogPost.title
-//   )
-// })
 </script>
 
 <template>
