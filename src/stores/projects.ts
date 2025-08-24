@@ -1,10 +1,16 @@
 import { defineStore } from 'pinia'
 import { ref } from 'vue'
 
-export const useProjectsStore = defineStore('projects', () => {
-  const projects = ref()
+export type projectPostsObject = { title: string; date: Date; image?: string; previewText: string }
 
-  function getProjectXML() {}
+export const useProjectStore = defineStore('projects', () => {
+  const projectPosts = ref([] as projectPostsObject[])
 
-  return { projects, getProjectXML }
+  function getProjectPosts() {
+    projectPosts.value = [
+      { title: 'badassProject', date: new Date(), previewText: 'even more badass project' },
+    ]
+  }
+
+  return { projectPosts, getProjectPosts }
 })

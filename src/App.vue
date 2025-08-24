@@ -9,8 +9,8 @@ import HeaderBar from './components/HeaderBar.vue'
     <v-app>
       <HeaderBar />
       <v-main>
-        <v-container>
-          <router-view />
+        <v-container max-width="920px">
+          <router-view></router-view>
         </v-container>
       </v-main>
     </v-app>
