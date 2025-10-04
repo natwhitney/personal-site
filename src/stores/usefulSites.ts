@@ -8,10 +8,13 @@ export const useUsefulSitesStore = defineStore('usefulSites', () => {
 
   function getSites() {
     sites.value = [
-      { site: 'addr.tools', description: 'cool description here' },
+      {
+        site: 'addr.tools',
+        description: 'A bunch of different internet tools with a bunch of useful stuff for DNS.',
+      },
       {
         site: 'site.second',
-        description: 'second cool description',
+        description: 'A placeholder site until I get the backend working lol',
       },
     ]
   }
